@@ -8,6 +8,58 @@ body {
   font-weight: 300;
 }
 
+#course-info {
+  font-size: 19px;
+  margin-top: 35px;
+  margin-top: 23px;
+  line-height: 39px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.course-time {
+  margin-top: 282px;
+  margin-left: 32px;
+  font-weight: bold;
+}
+
+#enrolled {
+  margin-top: 39px;
+  margin-left: 68px;
+  width: 19vw;
+  font-family: Arial;
+  font-size: 14px;
+  color: green;
+  border-radius: 64px;
+  padding: 12px;
+  text-transform: uppercase;
+  border: 1px solid #FFFFFF;
+  color: #ffffff;
+}
+
+
+#gotocourse {
+  width: 250px;
+  margin-top: 9px;
+  width: 19vw;
+  margin-left: 68px;
+  width: 19vw;
+  width: 157px;
+  font-family: Arial;
+  font-size: 14px;
+  color: green;
+  border-radius: 64px;
+  padding: 11px;
+  text-transform: uppercase;
+  border: 1px solid #FFFFFF;
+  color: #ffffff;
+}
+
+.classroom-intro {
+  margin: 30px 0 50px 50px;
+
+}
+
 .anchors {
   margin-left: -60px;
 }

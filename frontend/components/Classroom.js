@@ -27,17 +27,28 @@ class Classroom extends React.Component{
             </a>
           </div>
         </nav>
-          <div>
+          <div className="classroom-intro">
             <h1>British Literature</h1>
-            <p>A complete analysis of one of the most pivotal works of British Literature, Pride and Prejudice by Jane Austen.</p>
+            <p id="course-info">A complete analysis of one of the most pivotal works of British Literature, Pride and Prejudice by Jane Austen.</p>
           </div>
           <div className="intro-window">
+            <div className="course-time">
+            <p>Sep 9 - Nov 23</p>
+            <p>Saturday, Sunday 8:30 -9:30 pm EST</p>
+            </div>
             <input
               type="submit"
+              value="Enrolled"
+              id="enrolled"
+              />
+            <input
+              type="submit"
+              id="gotocourse"
               onClick={()=>{
                 this.props.toggle();
               }}
-              style={{'width': '250'}}/>
+              value="Go to Course"
+              />
             <Modal
               isOpen={this.props.isActive}
               onRequestClose={this.props.toggle}
