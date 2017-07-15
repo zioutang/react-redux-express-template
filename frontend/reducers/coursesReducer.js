@@ -1,6 +1,6 @@
 
 const course1 = {
-    courseName : 'course1',
+    courseName : 'French Cusin',
     from: 'July',
     to: 'Augest',
     startTime: new Date().getHours() + ' : ' + new Date().getMinutes()
@@ -9,13 +9,13 @@ const course1 = {
 
 }
 const course2 = {
-    courseName : 'course2',
+    courseName : 'Fashion Design',
     from: 'July',
     to: 'Augest',
     startTime: new Date().getHours() + ' : ' + new Date().getMinutes()
 }
 const course3 = {
-    courseName : 'course3',
+    courseName : 'British Literature',
     from: 'Aug',
     to: 'Nov',
     startTime: new Date().getHours() + ' : ' + new Date().getMinutes()

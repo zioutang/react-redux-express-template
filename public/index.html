@@ -3,60 +3,26 @@
     <head>
         <meta charset="utf-8">
         <title>Node + React Starter</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <style>
-            body {
-              font-family: Roboto;
-              font-weight: 300;
-            }
-
-            .nav-bar {
-              background-color: black;
-            }
-
-            .all-courses {
-              width: 87vw;
-              margin: 0 auto;
-              margin-top: 120px;
-            }
-
-            .top-contact:nth-child(3) {
-              background-image: url('https://i2.wp.com/www.leonardsbooks.com/blog/wp-content/uploads/18th_century_revivalist_1_med.jpg');
-              background-size: 300px 230px;
-              background-repeat: no-repeat;
-            }
-
-            .top-contact:nth-child(2) {
-              background-image: url('http://assets.howtobecome.com/assets/images/2014/03/Fashion-Designer.jpg');
-              background-size: 300px 230px;
-              background-repeat: no-repeat;
-            }
-
-            .top-contact:first-child {
-              background-image: url('http://www.getnowapp.com/wp-content/uploads/2016/04/healthy-cooking.jpg');
-              background-size: 300px 230px;
-              background-repeat: no-repeat;
-            }
-            .top-contact {
-                display: inline-block;
-                margin-left: 50px;
-                font-size: 15px;
-                border: solid;
-                border-color: #cccccc;
-                border-width: thin;
-                height: 330px;
-                width: 300px;
-              }
-
-            .course-listing {
-              padding: 20px;
-              margin-top: 233px;
-            }
-        </style>
     </head>
     <body>
       <nav class="navbar navbar-default">
+
+        <div class="nav-right">
+          <ul class="top">
+            <li><img id="account-image" src="https://pbs.twimg.com/profile_images/662676118093217792/BiLFLRXG.png" /></li>
+            <li style="color: #000000, padding: 6px;">My Courses</li>
+            <li style="color: #000000, padding: 6px;">Catogories</li>
+            <li style="color: #000000, padding: 6px;">Log Out</li>
+          </ul>
+          <a href="#" class="top" id="cart">
+            <i class="fa fa-question icon" aria-hidden="true"></i>
+            <i class="fa fa-search icon" aria-hidden="true"></i>
+            <i class="fa fa-heart-o icon" aria-hidden="true"></i>
+          </a>
+        </div>
       </nav>
         <div id='root'/>
     </body>
