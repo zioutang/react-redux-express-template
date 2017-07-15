@@ -11,6 +11,22 @@ class Classroom extends React.Component{
     render() {
       return (
         <div id='render'>
+        <nav className="navbar navbar-default">
+
+          <div className="nav-right">
+            <ul className="top">
+              <li><img id="account-image" src="https://pbs.twimg.com/profile_images/662676118093217792/BiLFLRXG.png" /></li>
+              <li style={{color: '#000000', padding: 6}}>My Courses</li>
+              <li style={{color: '#000000', padding: 6}}>Catogories</li>
+              <li style={{color: '#000000', padding: 6}}>Log Out</li>
+            </ul>
+            <a href="#" className="top" id="cart">
+              <i className="fa fa-question icon" aria-hidden="true"></i>
+              <i className="fa fa-search icon" aria-hidden="true"></i>
+              <i className="fa fa-heart-o icon" aria-hidden="true"></i>
+            </a>
+          </div>
+        </nav>
           <div>
             <h1>British Literature</h1>
             <p>A complete analysis of one of the most pivotal works of British Literature, Pride and Prejudice by Jane Austen.</p>
