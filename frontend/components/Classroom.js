@@ -11,7 +11,14 @@ const Classroom = ( ) => {
             </div>
 
             <div className="intro-window">
-              
+              <div className="button">
+                <div className="button-white">
+                <input type="submit" value="Enrolled" />
+                </div>
+                <div className="button-white">
+                <input type="submit" value="Go to Course" />
+                </div>
+              </div>
             </div>
         </div>
     );
