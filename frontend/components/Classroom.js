@@ -31,6 +31,7 @@ class Classroom extends React.Component{
             <h1>British Literature</h1>
             <p id="course-info">A complete analysis of one of the most pivotal works of British Literature, Pride and Prejudice by Jane Austen.</p>
           </div>
+
           <div className="intro-window">
             <div className="course-time">
             <p>Sep 9 - Nov 23</p>
@@ -61,6 +62,18 @@ class Classroom extends React.Component{
 
                 value= "Back"/>
               </Modal>
+          </div>
+
+          <div className="other-course-info">
+            <p>
+            Jane Austen’s classic 1813 novel, Pride and Prejudice, comes to
+            life in this video course from Providence eLearning. British
+            Literature expert William Lasseter gives lectures that provide
+            in-depth explanations of chapters as you make your way through the
+            work.</p>
+            <p>
+            One of Jane Austen most pivotal works, Pride and Prejudice follows the story of Elizabeth Bennet as she embarks on a journey towards enlightenment. The novel touches on such themes as first impressions, marriage, money, class and self-knowledge. Austens novel continues to fascinate and enchant modern day readers as it has become one of the most popular novels in English literature.
+            </p>
           </div>
       </div>
         );
