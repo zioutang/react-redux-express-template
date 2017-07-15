@@ -2,22 +2,31 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { connect } from 'react-redux';
 import Title from '../components/Title';
-
-const AppContainer = ({ name }) => {
+import Courses from '../components/Courses';
+import Classroom from '../components/Classroom'
+import { BrowserRouter, Route, Switch /*, Link */ } from 'react-router-dom';
+const AppContainer = ({list}) => {
     return (
-        <div>
-            <Title name={name} />
-        </div>
+        <BrowserRouter>
+          <div>
+            <h1>You have logged in</h1>
+
+            <Switch>
+            <Route path="/Classroom"  component={Classroom}/>
+            <Route path="/" exact render={() => <Courses list={list}/>}/>
+            </Switch>
+          </div>
+        </BrowserRouter>
     );
 };
 
 AppContainer.propTypes = {
-    name: PropTypes.string,
+    list: PropTypes.array,
 };
 
 const mapStateToProps = (state) => {
     return {
-        name: state.name
+        list: state.list
     };
 };
 

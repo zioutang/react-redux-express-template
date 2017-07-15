@@ -6,11 +6,10 @@ const api = require('./backend/routes');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (request, response) => {
+app.use('/api', api);
+app.get('*', (request, response) => {
     response.sendFile(__dirname + '/public/index.html'); // For React/Redux
 });
-
-app.use('/api', api);
 
 app.listen(PORT, error => {
     error
