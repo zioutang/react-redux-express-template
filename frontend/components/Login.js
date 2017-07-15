@@ -35,8 +35,14 @@ const Login = () => {
               <h1 className="dimension">
                 Learner
               </h1>
-              <a href="https://www.mattek.com/" className="button button-white">LEARN MORE</a>
-              <a href="https://www.mattek.com/" className="button button-white">LOG IN</a>
+              <div className="anchors">
+                <a href="https://www.mattek.com/" className="button button-white">LEARN MORE</a>
+                <a style={{marginLeft: 30}} href="https://www.mattek.com/" className="button button-white">
+                <Link to="/home">
+                  LOG IN
+                </Link>
+                </a>
+              </div>
             </div>
           </section>
 
@@ -59,8 +65,14 @@ const Login = () => {
                 <h1 className="dimension">
                   Teacher
                 </h1>
-                <a href="https://www.mattek.com/" className="button button-white">LEARN MORE</a>
-                <a href="https://www.mattek.com/" className="button button-white">LOG IN</a>
+                <div className="anchors">
+                  <a href="https://www.mattek.com/" className="button button-white">LEARN MORE</a>
+                  <a style={{marginLeft: 30}} href="https://www.mattek.com/" className="button button-white">
+                  <Link to="/home">
+                    LOG IN
+                  </Link>
+                  </a>
+                </div>
               </div>
 
           </section>
