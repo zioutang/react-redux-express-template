@@ -18,9 +18,6 @@ const Courses = ( { list } ) => {
                             <div>
                               {item.from} - {item.to}
                             </div>
-                            <div>
-                              {item.startTime}
-                            </div>
                         </div>
                   </li>
                 )

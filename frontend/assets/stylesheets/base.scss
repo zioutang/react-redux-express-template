@@ -81,7 +81,13 @@ body {
     width: 300px;
   }
 
+a:hover {
+  text-decoration: none;
+}
+
 .course-listing {
   padding: 20px;
   margin-top: 233px;
+  text-decoration: none;
+  line-height: 29px;
 }
