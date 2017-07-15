@@ -55,6 +55,9 @@ class Classroom extends React.Component{
               onRequestClose={this.props.toggle}
               contentLabel="Modal">
               <h1>Live with Pro</h1>
+              <div>
+                <a href='https://glipchat.herokuapp.com/room/hJadL5TEfxGGotopc'>Join class</a>
+              </div>
               <input type="submit"
                 onClick={ ()=> {
                   this.props.toggle();
