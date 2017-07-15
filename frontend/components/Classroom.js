@@ -1,4 +1,5 @@
 import React from 'react';
+
 // import PropTypes from 'prop-types';
 import Video from 'twilio-video';
 
@@ -7,7 +8,14 @@ const Classroom = () => {
 
     return (
         <div id='render'>
-          <h1>Helo</h1>
+            <div>
+              <h1>British Literature</h1>
+              <p>A complete analysis of one of the most pivotal works of British Literature, Pride and Prejudice by Jane Austen.</p>
+            </div>
+
+            <div className="intro-window">
+              
+            </div>
         </div>
     );
 };

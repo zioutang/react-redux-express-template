@@ -2,3 +2,105 @@ h1 {
   font-family: helvetica;
   font-weight: 200;
 }
+
+body {
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.intro-window {
+  background-image: url('http://www.tinashreevetutor.com/uploads/6/9/5/3/69531223/1034805.jpg?379');
+  background-size: 300px 203px;
+  background-repeat: no-repeat;
+  margin-left: 50px;
+  font-size: 15px;
+  border: solid;
+  border-color: #cccccc;
+  border-width: thin;
+  height: 500px;
+  width: 287px;
+}
+
+.icon {
+  padding: 5px;
+}
+
+#account-image {
+  width: 33px;
+  height: 33px;
+}
+
+.nav-right {
+  margin-top: 13px;
+}
+
+.top {
+  color: black;
+  display: inline-block;
+  padding-left: 17px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.top > li{
+  display: inline-block;
+  border-right: 0.5px solid black;
+  color: #073d69;
+  font-size: 15px;
+  padding: 0 9px;
+}
+
+.top > li:last-child {
+  border-right: 0;
+}
+
+#cart {
+  float: right;
+  padding-right: 23px;
+  font-size: 17px;
+}
+
+.all-courses {
+  width: 87vw;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+.top-contact:nth-child(3) {
+  background-image: url('https://i2.wp.com/www.leonardsbooks.com/blog/wp-content/uploads/18th_century_revivalist_1_med.jpg');
+  background-size: 300px 230px;
+  background-repeat: no-repeat;
+}
+
+.top-contact:nth-child(2) {
+  background-image: url('http://assets.howtobecome.com/assets/images/2014/03/Fashion-Designer.jpg');
+  background-size: 300px 230px;
+  background-repeat: no-repeat;
+}
+
+.top-contact:first-child {
+  background-image: url('http://www.getnowapp.com/wp-content/uploads/2016/04/healthy-cooking.jpg');
+  background-size: 300px 230px;
+  background-repeat: no-repeat;
+}
+.top-contact {
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 15px;
+    border: solid;
+    border-color: #cccccc;
+    border-width: thin;
+    height: 330px;
+    width: 300px;
+  }
+
+a:hover {
+  text-decoration: none;
+}
+
+.course-listing {
+  padding: 20px;
+  margin-top: 233px;
+  text-decoration: none;
+  line-height: 29px;
+}

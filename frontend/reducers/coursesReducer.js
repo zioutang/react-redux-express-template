@@ -1,23 +1,23 @@
 
 const course1 = {
-    courseName : 'course1',
-    from: 'July',
-    to: 'Augest',
+    courseName : 'French Cusin',
+    from: 'Jun 22',
+    to: 'Jul 23',
     startTime: new Date().getHours() + ' : ' + new Date().getMinutes()
     // + '  : ' + new Date().getMonth() + ' / ' +
     // new Date().getDate() + ' / ' + new Date().getUTCFullYear()
 
 }
 const course2 = {
-    courseName : 'course2',
-    from: 'July',
-    to: 'Augest',
+    courseName : 'Fashion Design',
+    from: 'Aug 13',
+    to: 'Aug 15',
     startTime: new Date().getHours() + ' : ' + new Date().getMinutes()
 }
 const course3 = {
-    courseName : 'course3',
-    from: 'date from',
-    to: 'date to',
+    courseName : 'British Literature',
+    from: 'Sep 9',
+    to: 'Nov 23',
     startTime: new Date().getHours() + ' : ' + new Date().getMinutes()
 }
 const courseArr = [];

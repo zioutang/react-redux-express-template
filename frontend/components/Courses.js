@@ -7,24 +7,23 @@ const Courses = ( { list } ) => {
   console.log(list);
     return (
         <div>
-          <ul>
-          {list.map((item)=>{
-            return (<li><div class="row m-t-30 well well-sm">
-              <div class="col-sm-3 well well-sm">
-                <div>
-                  <Link to="/Classroom">{item.courseName}</Link>
-                </div>
-                <div>
-                  course offerd from: {item.from}
-                </div>
-                <div>
-                  course offerd to: {item.to}
-                </div>
-                  course starts at: {item.startTime}
-              </div>
-            </div></li>)
-          })}
-        </ul>
+                <ul className="all-courses">
+                {list.map((item)=>{
+                  return (
+                    <li className="top-contact">
+                        <div className="course-listing">
+                            <div>
+                              <Link to="/Classroom">{item.courseName}</Link>
+                            </div>
+                            <div>
+                              {item.from} - {item.to}
+                              <i className="fa fa-heart-o icon" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                  </li>
+                )
+                })}
+              </ul>
         </div>
     );
 };

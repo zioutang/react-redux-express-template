@@ -9,12 +9,10 @@ const AppContainer = ({list}) => {
     return (
         <BrowserRouter>
           <div>
-            <h1>You have logged in</h1>
-
-            <Switch>
-            <Route path="/Classroom"  component={Classroom}/>
-            <Route path="/" exact render={() => <Courses list={list}/>}/>
-            </Switch>
+              <Switch>
+              <Route path="/Classroom"  component={Classroom}/>
+              <Route path="/" exact render={() => <Courses list={list}/>}/>
+              </Switch>
           </div>
         </BrowserRouter>
     );
