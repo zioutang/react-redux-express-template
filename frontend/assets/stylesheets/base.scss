@@ -8,8 +8,13 @@ body {
   font-weight: 300;
 }
 
+
 .input-box {
   width: 179px;
+}
+
+.cat {
+  margin: 0 5px;
 }
 
 .snoopy {
@@ -31,12 +36,12 @@ body {
 
 .first-intro {
   background-image: url('http://www.yuxinoulogistics.com/website/fximg/bckg.jpg');
-  height: 700px;
+  height: 600px;
 }
 
 .second-intro {
   background-image: url('http://www.yuxinoulogistics.com/website/fximg/bckg.jpg');
-  height: 190px;
+  height: 500px;
 }
 
 .head-icon {
@@ -75,8 +80,9 @@ body {
 }
 
 .login-div {
-  background-image: url('http://www.yuxinoulogistics.com/website/fximg/bckg.jpg');
-  height: 700px;
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 60px;
 }
 
 .button {
