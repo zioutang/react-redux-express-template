@@ -59,12 +59,13 @@ class Classroom extends React.Component{
                 onClick={ ()=> {
                   this.props.toggle();
                 }}
-
+                id="back"
                 value= "Back"/>
               </Modal>
           </div>
 
           <div className="other-course-info">
+            <h2 style={{marginBottom: 23}}>Description</h2>
             <p>
             Jane Austen’s classic 1813 novel, Pride and Prejudice, comes to
             life in this video course from Providence eLearning. British
