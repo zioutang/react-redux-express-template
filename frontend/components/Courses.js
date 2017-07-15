@@ -17,6 +17,7 @@ const Courses = ( { list } ) => {
                             </div>
                             <div>
                               {item.from} - {item.to}
+                              <i className="fa fa-heart-o icon" aria-hidden="true"></i>
                             </div>
                         </div>
                   </li>
