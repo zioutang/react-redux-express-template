@@ -15,7 +15,7 @@ class Classroom extends React.Component{
 
           <div className="nav-right">
             <ul className="top">
-              <li><img id="account-image" src="https://pbs.twimg.com/profile_images/662676118093217792/BiLFLRXG.png" /></li>
+              <li><img id="account-image" src="https://s-media-cache-ak0.pinimg.com/originals/f4/5e/9d/f45e9dbac8cac965a7aa5085a8ed6c3e.jpg" /></li>
               <li style={{color: '#000000', padding: 6}}>My Courses</li>
               <li style={{color: '#000000', padding: 6}}>Catogories</li>
               <li style={{color: '#000000', padding: 6}}>Log Out</li>
