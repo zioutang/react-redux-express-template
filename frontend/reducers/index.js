@@ -1,6 +1,6 @@
 import { routerReducer as routing } from 'react-router-redux';
 import { combineReducers } from 'redux';
-// import rootReducer from './index';
+import isActive from './isActive';
 import courseReducer from './coursesReducer';
 // import indexReducer from './indexReducer';
 // import contentReducer from './contentReducer';
@@ -9,6 +9,7 @@ import courseReducer from './coursesReducer';
 const mainReducer = combineReducers({
       routing: routing,
       list: courseReducer,
+      isActive:isActive
       // name: index,
       // index: indexReducer,
       // content: contentReducer

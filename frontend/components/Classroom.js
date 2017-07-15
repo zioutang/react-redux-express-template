@@ -1,29 +1,60 @@
 import React from 'react';
 
 // import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import Modal from 'react-modal';
+class Classroom extends React.Component{
 
-const Classroom = ( ) => {
-    return (
+  componentWillMount () {
+    Modal.setAppElement('body');
+  }
+    render() {
+      return (
         <div id='render'>
-            <div>
-              <h1>British Literature</h1>
-              <p>A complete analysis of one of the most pivotal works of British Literature, Pride and Prejudice by Jane Austen.</p>
-            </div>
+          <div>
+            <h1>British Literature</h1>
+            <p>A complete analysis of one of the most pivotal works of British Literature, Pride and Prejudice by Jane Austen.</p>
+          </div>
+          <div className="intro-window">
+            <input
+              type="submit"
+              onClick={()=>{
+                this.props.toggle();
+              }}
+              style={{'width': '250'}}/>
+            <Modal
+              isOpen={this.props.isActive}
+              onRequestClose={this.props.toggle}
+              contentLabel="Modal">
+              <h1>Live with Pro</h1>
+              <input type="submit"
+                onClick={ ()=> {
+                  this.props.toggle();
+                }}
 
-            <div className="intro-window">
-              <div className="button">
-                <div className="button-white">
-                <input type="submit" value="Enrolled" />
-                </div>
-                <div className="button-white">
-                <input type="submit" value="Go to Course" />
-                </div>
-              </div>
-            </div>
-        </div>
-    );
+                value= "Back"/>
+              </Modal>
+          </div>
+      </div>
+        );
+
+    }
+};
+const mapStateToProps = (state) => {
+    return {
+        isActive: state.isActive,
+    };
 };
 
+const mapDispatchToProps = (dispatch) => {
+    return {
+      toggle: ()=> dispatch({
+          type: 'TOGGLE'
+      }),
+    };
+};
 
-
-export default Classroom;
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Classroom);

@@ -4,16 +4,15 @@ import { Link } from 'react-router-dom';
 
 
 const Courses = ( { list } ) => {
-  console.log(list);
     return (
         <div>
-                <ul className="all-courses">
+            <ul className="all-courses">
                 {list.map((item)=>{
                   return (
                     <li className="top-contact">
                         <div className="course-listing">
                             <div>
-                              <Link to="/Classroom">{item.courseName}</Link>
+                              <Link to="/home/Classroom">{item.courseName}</Link>
                             </div>
                             <div>
                               {item.from} - {item.to}
